@@ -11,8 +11,3 @@ import java.util.UUID;
 public class UserRepository implements PanacheRepositoryBase<UserEntity, UUID> {
 
 }
-
-// Repositórios são responsáveis por interagir diretamente com o banco de dados
-// Regras de negócio não deveriam ser implementadas em repositórios
-
-// - Usar para consulta e manipulação de dados no banco
