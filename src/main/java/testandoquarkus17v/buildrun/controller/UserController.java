@@ -37,12 +37,3 @@ public class UserController {
 
 }
 
-
-// Controllers são responsáveis por lidar com requisições HTTP
-// E a comunicação com o mundo externo (ex.: front-end ou APIs externas)
-// Eles recebem os dados da solicitação
-// Chamam os serviços para processá-los, e retornam as respostas.
-
-// Regras de negócio não são recomendáveis aqui
-
-// Transactional -> Interação direta com DB ( não serve para leitura )
