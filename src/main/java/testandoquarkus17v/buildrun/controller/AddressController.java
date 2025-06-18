@@ -17,13 +17,10 @@ public class AddressController {
     public AddressController(AddressService addressService){
         this.addressService = addressService;
     }
-
     
     @GET
     public Response findAll(){
         return Response.ok(addressService.findAll()).build();
     }
-
-    //TODO Implementar consulta de endereço pelo nome do usuário
     
 }
