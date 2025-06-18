@@ -17,6 +17,7 @@ Este projeto é uma API CRUD desenvolvida em Java utilizando o framework Quarkus
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
 ![JUnit](https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=junit5&logoColor=white)
 ![H2](https://img.shields.io/badge/H2-1F6CB0?style=for-the-badge&logo=h2&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
 
 - **Java**
