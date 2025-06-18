@@ -17,7 +17,7 @@ public class UserService {
     @Inject
     UserRepository userRepository;
 
-    /*Create user reotna u*/
+    //  Create user retorna user
     @Transactional
     public UserResponseDTO createUser(UserRequestDTO userDTO){
         UserEntity user = UserMapper.toEntity(userDTO);
