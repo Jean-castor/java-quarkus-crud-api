@@ -7,7 +7,7 @@ import lombok.*;
 import java.io.Serializable;
 
 @Data // gera automaticamente getters, setters, equals, hashCode e toString
-@AllArgsConstructor //  gera um construtor com todos os campos como parâmetrosimport jakarta.validation.constraints.NotBlank;
+@AllArgsConstructor //  gera um construtor com todos os campos como parâmetros;
 @NoArgsConstructor // - gera um construtor sem parâmetro
 @Getter
 @Setter
