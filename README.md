@@ -1,78 +1,53 @@
-# appquarkus17v
+# Java Quarkus CRUD API
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+Este projeto é uma API CRUD desenvolvida em Java utilizando o framework Quarkus. O objetivo principal é fornecer operações de criação, leitura, atualização e exclusão (CRUD) integradas a um banco de dados, permitindo a fácil manipulação de registros através de endpoints RESTful.
 
-If you want to learn more about Quarkus, please visit its website: <https://quarkus.io/>.
+## Funcionalidades
 
-## Running the application in dev mode
+- **Operações CRUD**: Permite inserir, buscar, atualizar e remover registros no banco de dados.
+- **Arquitetura moderna**: Utiliza o Quarkus, proporcionando alta performance e baixo consumo de memória.
+- **Testes Automatizados**: Inclui classes de testes para garantir a qualidade e funcionamento correto das funcionalidades implementadas.
 
-You can run your application in dev mode that enables live coding using:
+## Tecnologias Utilizadas
 
-```shell script
-./mvnw quarkus:dev
+- **Java**
+- **Quarkus** 
+- **JPA/Hibernate** (para persistência de dados)
+- **Banco de Dados Relacional** (ex: PostgreSQL, H2, etc.)
+- **JUnit** (para testes automatizados)
+
+## Como executar
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/Jean-castor/java-quarkus-crud-api.git
+   cd java-quarkus-crud-api
+   ```
+
+2. **Execute o projeto em modo desenvolvimento:**
+   ```bash
+   ./mvnw quarkus:dev
+   ```
+
+3. **Acesse os endpoints da API** conforme documentado nos recursos do projeto.
+
+## Testes
+
+Para rodar os testes automatizados, utilize:
+```bash
+./mvnw test
 ```
 
-> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at <http://localhost:8080/q/dev/>.
+## Organização do Projeto
 
-## Packaging and running the application
+- `src/main/java`: Código-fonte principal da API.
+- `src/test/java`: Classes de teste automatizado.
+- `src/main/resources`: Configurações do projeto e do banco de dados.
 
-The application can be packaged using:
+## Contribuição
 
-```shell script
-./mvnw package
-```
+Sinta-se à vontade para abrir issues ou pull requests com sugestões, correções ou melhorias.
 
-It produces the `quarkus-run.jar` file in the `target/quarkus-app/` directory.
-Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/quarkus-app/lib/` directory.
+## Licença
 
-The application is now runnable using `java -jar target/quarkus-app/quarkus-run.jar`.
-
-If you want to build an _über-jar_, execute the following command:
-
-```shell script
-./mvnw package -Dquarkus.package.jar.type=uber-jar
-```
-
-The application, packaged as an _über-jar_, is now runnable using `java -jar target/*-runner.jar`.
-
-## Creating a native executable
-
-You can create a native executable using:
-
-```shell script
-./mvnw package -Dnative
-```
-
-Or, if you don't have GraalVM installed, you can run the native executable build in a container using:
-
-```shell script
-./mvnw package -Dnative -Dquarkus.native.container-build=true
-```
-
-You can then execute your native executable with: `./target/appquarkus17v-1.0.0-SNAPSHOT-runner`
-
-If you want to learn more about building native executables, please consult <https://quarkus.io/guides/maven-tooling>.
-
-## Related Guides
-
-- REST ([guide](https://quarkus.io/guides/rest)): A Jakarta REST implementation utilizing build time processing and Vert.x. This extension is not compatible with the quarkus-resteasy extension, or any of the extensions that depend on it.
-- REST Jackson ([guide](https://quarkus.io/guides/rest#json-serialisation)): Jackson serialization support for Quarkus REST. This extension is not compatible with the quarkus-resteasy extension, or any of the extensions that depend on it
-- Hibernate ORM with Panache ([guide](https://quarkus.io/guides/hibernate-orm-panache)): Simplify your persistence code for Hibernate ORM via the active record or the repository pattern
-- JDBC Driver - MySQL ([guide](https://quarkus.io/guides/datasource)): Connect to the MySQL database via JDBC
-
-## Provided Code
-
-### Hibernate ORM
-
-Create your first JPA entity
-
-[Related guide section...](https://quarkus.io/guides/hibernate-orm)
-
-[Related Hibernate with Panache section...](https://quarkus.io/guides/hibernate-orm-panache)
-
-
-### REST
-
-Easily start your REST Web Services
-
-[Related guide section...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
+Este projeto está sob a licença MIT.
