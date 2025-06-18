@@ -16,9 +16,9 @@ import java.util.UUID;
 public class UserEntity extends PanacheEntityBase {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID userId;                                                                                         // UUID -> COMPOSTO POR DOIS VALORES LONG INTERNAMENTE
+    private UUID userId;                                                                                         // UUID -> COMPOSTO POR VALORES LONG INTERNAMENTE
 
-    @NotNull                                                                                                    // DEFINE QUE O ATRIBUTO NÃO PODE SER NULO
+    @NotNull                                                                                                   
     @Column(name = "name")                                                                                      // DEFINE O NOME DA COLUNA DE NOME DO USUÁRIO
     private String username;
 
