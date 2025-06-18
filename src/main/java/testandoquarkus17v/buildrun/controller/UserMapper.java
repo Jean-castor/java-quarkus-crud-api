@@ -15,31 +15,27 @@ public class UserMapper {
         // Evita NullPointerException ao tentar acessar propriedades de um objeto nulo
         if(entity == null) return null;
 
-        /*
-            Cria uma nova instância do DTO que será retornado
-        */
+        
+        // Cria uma nova instância do DTO que será retornado
+        
         UserResponseDTO dto = new UserResponseDTO();
-
-        /*
-            Passando o id de usuário para o DTO
-        */
+        
+        // Passando o id de usuário para o DTO
+        
         dto.setUserId(entity.getUserId());
 
-        /*
-            Passando nome de usuário para o DTO
-        */
+        // Passando nome de usuário para o DTO
+    
         dto.setUsername(entity.getUsername());
 
-        /*
-            Passando a idade do usuário para o DTO
-        */
+        // Passando a idade do usuário para o DTO
+        
         dto.setAge(entity.getAge());
+  
+        // Se a entidade de endereço NÃO for nula.
+        // O endereço é passado para a entidade de user
+        // No final, retorna o dto com os atributos
 
-        /*
-            Se a entidade de endereço NÃO for nula.
-            O endereço é passado para a entidade de user
-            No final, retorna o dto com os atributos
-        */
         if(entity.getAddress() != null){
             dto.setAddress(toDTO(entity.getAddress()));
         }
@@ -88,7 +84,7 @@ public class UserMapper {
     }
 
     // Métodos para Profession
-// Métodos para Profession
+    // Métodos para Profession
     public static ProfessionResponseDTO toDTO(ProfessionEntity entity) {
         if (entity == null) return null;
 
@@ -107,7 +103,5 @@ public class UserMapper {
 
         return entity;
     }
-
-
 
 }
