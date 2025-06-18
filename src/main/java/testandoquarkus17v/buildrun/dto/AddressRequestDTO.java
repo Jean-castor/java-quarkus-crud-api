@@ -12,22 +12,21 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 public class AddressRequestDTO implements Serializable {
-    // Validação de entradaaaaa
+    // Validação de entrada
     @NotBlank(message = "O campo de rua é obrigatório")
     private String street;
 
-    // Validação de entradaaaaa
+    // Validação de entrada
     @NotBlank(message = "O campo de número é obrigatório")
     private String number;
 
-    // Validação de entradaaaaa
+    // Validação de entrada
     @NotBlank(message = "O campo de cidade é obrigatório")
     @Size(max = 100, message = "A cidade não pode ultrapassar 100 caracteres")
     private String city;
 
-    // Validação de entradaaaaa
+    // Validação de entrada
     @NotBlank(message = "O campo de estado é obrigatório")
     private String state;
 
-    // Outros campos necessários
 }
